@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut ico" href="favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Excel like app</title>
+  </head>
+  <body>
+    <div class="container" id="app">
+      <div class="excel">
+        <div class="excel__header header">
+          <input type="text" class="header__input" value="Новая таблица" />
+          <div class="header__icons">
+            <button class="header__btn btn btn--delete">
+              <span class="material-icons">
+                delete_forever
+              </span>
+            </button>
+            <button class="header__btn btn btn--exit">
+              <span class="material-icons">
+                exit_to_app
+              </span>
+            </button>
+          </div>
+        </div>
+        <div class="excel__toolbar toolbar">
+          <button class="toolbar__btn btn btn--align">
+            <span class="material-icons">
+              format_align_left
+            </span>
+          </button>
+          <button class="toolbar__btn btn btn--align">
+            <span class="material-icons">
+              format_align_right
+            </span>
+          </button>
+          <button class="toolbar__btn btn btn--align">
+            <span class="material-icons">
+              format_align_center
+            </span>
+          </button>
+          <button class="toolbar__btn btn btn--format">
+            <span class="material-icons">
+              format_bold
+            </span>
+          </button>
+          <button class="toolbar__btn btn btn--format">
+            <span class="material-icons">
+              format_italic
+            </span>
+          </button>
+          <button class="toolbar__btn btn btn--format">
+            <span class="material-icons">
+              format_underline
+            </span>
+          </button>
+        </div>
+        <div class="excel__formula formula">
+          <div class="formula__info">fx</div>
+          <div class="formula__input" contenteditable spellcheck="false"></div>
+        </div>
+        <div class="excel__table table">
+          <div class="table__row">
+            <div class="table__row-info"></div>
+            <div class="table__row-data">
+              <div class="table__column">A</div>
+              <div class="table__column">B</div>
+              <div class="table__column">C</div>
+            </div>
+          </div>
+          <div class="table__row">
+            <div class="table__row-info">1</div>
+            <div class="table__row-data">
+              <div class="table__cell selected" contenteditable>A</div>
+              <div class="table__cell" contenteditable>B</div>
+              <div class="table__cell" contenteditable>C</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
