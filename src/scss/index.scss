@@ -35,10 +35,10 @@ body {
 }
 
 // Components
-@import './components/header';
-@import './components/toolbar';
-@import './components/formula';
-@import './components/table';
+@import './partials/header';
+@import './partials/toolbar';
+@import './partials/formula';
+@import './partials/table';
 @import './dashboard';
 
 
